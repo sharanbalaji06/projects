@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: task-tracker
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:tasktracker}
+    username: ${DB_USER:tasktracker}
+    password: ${DB_PASSWORD:tasktracker}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8080

@@ -9,6 +9,8 @@ services:
       DB_NAME: tasktracker
       DB_USER: tasktracker
       DB_PASSWORD: tasktracker
+      JWT_SECRET: ${JWT_SECRET:-change-this-dev-secret-change-this-dev-secret}
+      JWT_EXPIRATION_MS: ${JWT_EXPIRATION_MS:-86400000}
     depends_on:
       db:
         condition: service_healthy

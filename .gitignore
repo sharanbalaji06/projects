@@ -1,4 +1,41 @@
+# Build output
 target/
+!.mvn/wrapper/maven-wrapper.jar
+build/
+
+# Maven wrapper's downloaded distribution (large binary, re-downloaded on demand)
+.mvn/wrapper/dists/
+
+# IDE
 .idea/
 *.iml
+*.ipr
+*.iws
 .vscode/
+.classpath
+.project
+.settings/
+.factorypath
+.apt_generated/
+.springBeans
+.sts4-cache/
+bin/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Local env / secrets — never commit real credentials
+.env
+.env.*
+application-local.yml
+application-local.yaml
+
+# Misc local scratch files
+*.orig
+*.bak
+*.tmp
